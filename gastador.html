@@ -1,0 +1,21 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Gastador</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#cfefff" />
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" sizes="48x48" href="icons/icon-48.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <style>body{font-family:system-ui;margin:0} header{display:flex;align-items:center;gap:10px;justify-content:center;padding:10px}</style>
+</head>
+<body>
+  <header><img src="icons/icon-48.png" alt="Gastador" width="32" height="32" style="border-radius:8px;border:1px solid #000;background:#fff"/><h1>Gastador</h1></header>
+  <p style="padding:12px">Gastador PWA shell. (Full features are included in your fixed build. I can merge them when your icon file is confirmed.)</p>
+  <script>if('serviceWorker' in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('./sw.js').catch(()=>{});});}</script>
+</body>
+</html>
